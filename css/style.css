@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.7;
+}
+html{
+    font-size: 62.5%;
+}
+
+/* ########## utility classes ############## */
+
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+.btn{
+    display: inline;
+    padding: 0.9em 1.5em;
+    text-transform: uppercase;
+    font-size: medium;
+    margin: 0.5em 0;
+    text-decoration: none;
+    
+}
+.btn-primary{
+  background-color: #f4f4f4;
+  border-radius: 10rem;
+  font-weight: 500;
+}
+
+.lg-heading{
+font-size: 3em;
+}
+.md-heading{
+    font-size: 2.2em;
+}
+.text-red{
+    color: #e63946;
+}
+.text-white {
+    color: #f4f4f4;
+}
+.text-black {
+    color: #333;
+}
+.text-grey{
+    color: #555;
+}
+.bg-dark{
+    background-color: #333;
+}
+.header{
+    height: 95vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/header-image.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+.logo{
+  float: left;
+  display: inline;
+  margin-top: 0.5rem;
+  color: white;
+}
+.nav-items{
+    float: right;
+    margin-bottom: 0.5em;
+    margin-top: 2rem;
+}
+.nav-item{
+    display: inline-block;
+    padding: 0 20px;
+    letter-spacing: 0.15em;
+}
+.nav-item a{
+    color: #f4f4f4;
+    text-decoration: none;
+    font-size: 1.6rem;
+    padding: 0.3rem;
+}
+.nav-item a:hover {
+   border-bottom: 1px solid #f4f4f4;
+}
+.navbar::after{
+    content: '';
+    display: block;
+    clear: both;
+    
+}
+h1,h2,h3{
+    margin-bottom: 00.5em;
+    letter-spacing: 0.15em;
+    font-weight: 500;
+}
+ul li{
+list-style: none;
+}
+p, li{
+    font-size: 1.6rem;
+    letter-spacing: 0.1em;
+    margin-bottom: 00.5em;
+}
+
+.header-content h1{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.header-content p{
+    text-transform: uppercase;
+}
+.hero{
+    text-align: center;
+    margin: auto auto;
+    margin-top: 10%;
+}
+.hero p{
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+/* #####################showcase style##################### */
+.showcase{
+       background-color:#ddd;
+       padding: 10rem 0;
+}
+.row{
+    height: 350px;
+    background-color: white;
+    box-shadow: 0px 0px 20px rgb(143, 141, 141);
+}
+.row-1{
+    margin-bottom: 10rem;
+}
+.row-1 .img-box{
+    float: left;
+    width: 50%;
+}
+.row-1 .text-box {
+    float: right;
+    width: 50%;
+}
+.row-2 .img-box {
+    float: right;
+    width: 50%;
+}
+
+.row-2 .text-box {
+    float: left;
+    width: 50%;
+    padding: 4rem;
+}
+.row .img-box img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+}
+.row-1 .text-box {
+    float: left;
+    width: 50%;
+    padding: 4rem;
+}
+
+.row .img-box img {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.row .img-box{
+    height: 100%;
+}
+.row button{
+    background-color: white;
+    border-color: #e63946;
+    border-radius: 3rem;
+}
+.row button:hover {
+    background-color: #e63946;
+    border-color: white;
+    color: whitesmoke;
+    border-style: none;
+    cursor: pointer;
+}
+.row::after{
+    content: '';
+    display: block;
+    clear:both;
+}
+.box{
+    display: inline-block;
+    width: 33%;
+    height: 300px;
+    margin-top: 3rem;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0px 0px 20px #555;
+    margin-bottom: 3rem;
+}
+.box-1{
+  color: whitesmoke;
+  background-color: #333;
+}
+.box-2{
+color: whitesmoke;
+background-color: #e63946;
+}
+.box-3{
+color: whitesmoke;
+background-color: #333;
+}
+.box-wrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.box i{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+.tags i{
+    color: white;
+    margin: 2rem;
+}
+.copyright{
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+}
+.about-box{
+    display: inline-block;
+    text-align: center;
+    width: 45%;
+}
+.about-box-2 {
+    display: inline-block;
+    text-align: center;
+    width: 24%;
+}
+.about-footer{
+    background-color: #f13544;
+    color: white;
+    margin-top: 2rem;
+}
+.about-footer h2{
+    display: inline-block;
+    padding-left: 10%;
+}
+.about-footer button {
+    margin-left: 10%;
+    border-style: none;
+    border: 3px solid white;
+    background-color: #f13544;
+    color: white;
+    font-weight: 700;
+}
+.about-footer button:hover{
+    background-color: white;
+    color: #f13544;
+    cursor: pointer;
+}
+.about-font{
+    font-weight: 700;
+    font-size: 2rem;
+}
+.about-section{
+    margin-top: 2rem;
+    margin-bottom:3rem;
+}
+.about-us{
+    border-bottom: 3px solid #f13544;
+    color: #f13544;
+    margin-bottom: 2rem
+}
+.about-features{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.contact{
+    padding: 5rem 0;
+    font-size: 2rem;
+}
+
+
+.form-wrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.company-address{
+    float: left;
+    width: 49%;
+    padding: 1.5rem;
+    background-color: #f4f4f4;
+}
+
+
+.company-address i{
+    display: inline-block;
+    margin-right: 1rem;
+}
+.company-address h2 {
+    display: inline-block;
+    margin-bottom: 0.01rem;
+}
+.company-address p {
+    margin-bottom: 2rem;
+}
+.company-address img{
+    width: 98%;
+    min-height: 14rem;
+}
+.form {
+    float: right;
+    width: 49%;
+    background-color: #fff;
+}
+.form h1::after{
+    content: "";
+    display: block;
+    border: 3px solid #f13544;
+    width: 100%;
+}
+.form label{
+    display: block;
+}
+.form input{
+    display: block;
+    width: 92%;
+}
+.form textarea{
+    width: 100%;
+    height: 200px;
+    resize: none;
+}
+.form-group{
+    margin-bottom: 2rem;
+    
+}
+.form-label::after{
+    content: "";
+    color: #f13544;
+}
+.form-wrapper{
+    padding: 1rem;
+}
+.form button{
+    border-style: none;
+    display: block;
+    margin: 0 auto;
+    padding: 0.5em 3em;
+    background-color: #f13544;
+    color: white;
+    cursor: pointer;
+}
+.about-box li{
+    text-decoration: none;
+}
+
+
+
+/* ############################Media queries###################### */
+ 
+
+@media (max-width: 768px) {
+    html{
+        font-size: 50%;
+    }
+    .navbar .nav-items, .navbar .logo{
+        float: none;
+        display: block;
+        width :100%;
+        text-align: center;
+    }
+   .row{
+    height: auto;
+    width: 100%;
+   }
+   .row .img-box,
+   .row .text-box{
+    display: block;
+    float: none;
+    width: 100%;
+    text-align: center;
+   }
+   .box{
+    display: block;
+    float: none;
+    width: 100%;
+    text-align: center;
+    height: auto;
+   }
+   .about-box{
+    display: block;
+    width: 100%;
+    float: none;
+    height: auto;
+   }
+   .about-footer h2 ,.about-footer button{
+    display: block;
+    text-align: center;
+    padding: 1rem 1rem;
+    margin: auto;
+   }
+   .company-address, .form{
+    display: block;
+    float: none;
+    width: 100%;
+
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
